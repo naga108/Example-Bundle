@@ -1,105 +1,70 @@
 {
-  "resourceType": "Bundle",
-  "type": "Collection",
-  "entry": [
-    {
-      "resource": {
-        "resourceType": "Patient",
-        "name": [
-          {
-            "family": [
-              "EDWIN"
-            ],
-            "given": [
-              "ANDERSON"
-            ]
-          }
-        ],
-        "birthDate": "1969-01-31",
-        "gender": "Male"
+  "fullUrl": "resource:0",
+  "resource": {
+    "resourceType": "Patient",
+    "name": [
+      {
+        "family": "Anyperson",
+        "given": [
+          "John",
+          "B."
+        ]
       }
+    ],
+    "birthDate": "1951-01-20"
+  }
+}
+{
+  "fullUrl": "resource:1",
+  "resource": {
+    "resourceType": "Immunization",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "207"
+        }
+      ]
     },
-    {
-      "resource": {
-        "resourceType": "Immunization",
-        "vaccineCode": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/sid/cvx",
-              "code": "208"
-            }
-          ]
-        },
-        "patient": {
-          "reference": "resource:0"
-        },
-        "lotNumber": "EW0193",
-        "status": "Completed",
-        "occurrenceDateTime": "2021-05-06T04:00:00+00:00",
-        "location": {
-          "reference": "resource:0",
-          "display": "06 PALAIS DES CONGRÈS DE MONTRÉAL"
-        },
-        "protocolApplied": {
-          "doseNumber": 1,
-          "targetDisease": {
-            "coding": [
-              {
-                "system": "http://browser.ihtsdotools.org/?perspective=full&conceptId1=840536004",
-                "code": "840536004"
-              }
-            ]
-          }
-        },
-        "note": [
-          {
-            "text": "PB COVID-19"
-          }
-        ],
-        "reported": false,
-        "wasNotGiven": false
-      }
+    "patient": {
+      "reference": "resource:0"
     },
-    {
-      "resource": {
-        "resourceType": "Immunization",
-        "vaccineCode": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/sid/cvx",
-              "code": "208"
-            }
-          ]
-        },
-        "patient": {
-          "reference": "resource:0"
-        },
-        "lotNumber": "FA9099",
-        "status": "Completed",
-        "occurrenceDateTime": "2021-07-15T04:00:00+00:00",
-        "location": {
-          "reference": "resource:0",
-          "display": "06 CLINIQUE DE VACCINATION POINTE-SAINT-CHARLES"
-        },
-        "protocolApplied": {
-          "doseNumber": 2,
-          "targetDisease": {
-            "coding": [
-              {
-                "system": "http://browser.ihtsdotools.org/?perspective=full&conceptId1=840536004",
-                "code": "840536004"
-              }
-            ]
-          }
-        },
-        "note": [
-          {
-            "text": "PB COVID-19"
-          }
-        ],
-        "reported": false,
-        "wasNotGiven": false
+    "occurrenceDateTime": "2021-01-01",
+    "performer": [
+      {
+        "actor": {
+          "display": "ABC General Hospital"
+        }
       }
-    }
-  ]
+    ],
+    "lotNumber": "0000001"
+  }
+}
+{
+  "fullUrl": "resource:2",
+  "resource": {
+    "resourceType": "Immunization",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "207"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "resource:0"
+    },
+    "occurrenceDateTime": "2021-01-29",
+    "performer": [
+      {
+        "actor": {
+          "display": "ABC General Hospital"
+        }
+      }
+    ],
+    "lotNumber": "0000007"
+  }
 }
