@@ -8,9 +8,9 @@
         "resourceType": "Patient",
         "name": [
           {
-            "family": "Anyperson",
+            "family": "Smalls",
             "given": [
-              "John",
+              "Biggie",
               "B."
             ]
           }
