@@ -8,14 +8,14 @@
         "resourceType": "Patient",
         "name": [
           {
-            "family": "Anyperson",
+            "family": "Anderson",
             "given": [
-              "John",
-              "B."
+              "Glenn",
+              "K."
             ]
           }
         ],
-        "birthDate": "1951-01-20"
+        "birthDate": "1969-01-20"
       }
     },
     {
